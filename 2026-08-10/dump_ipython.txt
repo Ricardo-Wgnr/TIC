@@ -1,0 +1,27 @@
+import komm
+p = [1/2, 1/4, 1/8, 1/8]
+code = komm.HuffmanCode(p)
+code.enc_mapping
+p = [0.4, 0.2, 0.2, 0.1, 0.1]
+code.enc_mapping
+code = komm.HuffmanCode(p)
+code.enc_mapping
+code.rate(p)
+%history -f nome_do_arquivo.txt
+code2 = komm.HuffmanCode(p, policy='low')
+code2.enc_mapping
+code2.rate
+code2.rate(p)
+import numpy as np
+p = np.array([0.4, 0.2, 0.2, 0.1, 0.1])
+l1 = np.array([2,2,3,3,3])
+l2 = np.array([1,2,3,4,4])
+np.sum(p*l1)
+l1 = np.array([2,2,2,3,3])
+np.sum(p*l1)
+np.sum(p*l2)
+var1 = np.sum(p*l1**2)-2.2**2
+var1
+var2 = np.sum(p*l2**2)-2.2**2
+var2
+%history -f nome_do_arquivo.txt
