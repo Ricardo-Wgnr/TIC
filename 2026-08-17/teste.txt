@@ -1,0 +1,9 @@
+import komm
+import numpy as np
+lz78 = komm.LempelZiv78Code(source_cardinality_cardinality=27)
+lz78 = komm.LempelZiv78Code(source_cardinality=27)
+x = [1,0,1,19,1,0,4,1,0,3,1,19,1]
+lz78.source_to_tokens(x)
+lz78.enconde(x)
+lz78.encode(x)
+%history -f teste.txt
